@@ -195,10 +195,10 @@ class VoiceChatMod(loader.Module):
         )
 
     async def client_ready(self, client, db):
-        raise loader.LoadError(
-            "For the sake of security, this module is temporarily disabled for loading."
-            " See https://t.me/hikari_life/80 for more details"
-        )
+        #raise loader.LoadError(
+        #    "For the sake of security, this module is temporarily disabled for loading."
+        #    " See https://t.me/hikari_life/80 for more details"
+        #)
         # Monkeypatch pytgcalls MtProtoClient to support hikka's custom one
 
         class HikkaTLClient(MtProtoClient):
