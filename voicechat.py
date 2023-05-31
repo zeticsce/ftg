@@ -241,10 +241,10 @@ class VoiceChatMod(loader.Module):
                 self._cache_user_peer = Cache()
                 self._wait_result = UpdateSolver()
                 self._on_event_update = HandlersHolder()
-                self._binding = Binding(
-                    overload_quiet_mode,
-                    multi_thread,
-                )
+                #self._binding = Binding(
+                #    overload_quiet_mode,
+                #    multi_thread,
+                #)
 
                 def cleanup():
                     if self._async_core is not None:
